@@ -34,7 +34,8 @@ In this workshop, we will:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/<your-username>/PythonAstronomyWorkshop.git
+   
+   git clone https://github.com/Astrojigs/PythonAstronomyWorkshop.git
    cd PythonAstronomyWorkshop
    ```
 
