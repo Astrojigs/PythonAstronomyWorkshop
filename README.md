@@ -139,6 +139,6 @@ This is an educational repository. Contributions that add small datasets, clarif
 
 ## License
 
-Feel free to mention a license (e.g., MIT) for clarity. 
+MIT License
 
 ---
