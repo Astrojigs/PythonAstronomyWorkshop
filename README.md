@@ -1,145 +1,112 @@
-# PythonAstronomyWorkshop
-Materials and exercises for a hands-on introductory workshop on using Python and Astropy for astronomical calculations, data analysis, and visualization. Ideal for undergrad/grad students and astronomy enthusiasts eager to learn Python-based techniques for exploring and interpreting astronomical data.
-
-
----
-
-
-## **Welcome to the Python Astronomy Workshop!**  
-This repository contains all the materials, notebooks, datasets, and exercises for a hands-on introductory course focused on using Python for astronomical data analysis. Ideal for undergraduate and graduate students—or any astronomy enthusiast—these resources combine fundamental Python programming with real astronomy applications.
+# Python Astronomy Workshop
 
 ## Overview
 
-In this workshop, we will:
+This repository contains materials and exercises for a hands-on introductory workshop on using Python and Astropy for astronomical calculations, data analysis, and visualization. It is ideal for undergraduate and graduate students, as well as astronomy enthusiasts, who are eager to learn Python-based techniques for exploring and interpreting astronomical data.
 
-- Learn essential Python syntax and best practices.  
-- Explore common astronomical data formats (FITS, catalogs) and how to read, process, and analyze them.  
-- Use the powerful Astropy library for unit conversions, coordinate transformations, cosmological calculations, and more.  
-- Visualize data with Matplotlib, plot celestial images, and fit simple models to observational data.  
-- Work through real-world examples, from handling star catalogs to estimating cosmological distances.
-
-## Who is This For?
-
-- **Beginners to Python**: We start from the very basics, ensuring you have a strong foundation.
-- **Astronomy Students**: Use Python and Astropy to apply theoretical knowledge to practical data.
-- **Researchers/Enthusiasts**: Gain skills to analyze publicly available surveys (e.g., Gaia, SDSS), and integrate into your own workflow.
-
-## Prerequisites
-
-- Basic understanding of astronomical concepts (e.g., RA, Dec, magnitudes, redshift).
-- A Python 3 environment. We recommend installing Python via [Anaconda](https://www.anaconda.com/).
-- Jupyter Notebook or JupyterLab for interactive coding sessions.
-
-## Getting Started
-
-1. **Clone the Repository**:
-   ```bash
-   
-   git clone https://github.com/Astrojigs/PythonAstronomyWorkshop.git
-   cd PythonAstronomyWorkshop
-   ```
-
-2. **Set Up the Environment**:  
-   We recommend using a Conda environment:
-   ```bash
-   conda create -n astro-workshop python=3.11
-   conda activate astro-workshop
-   pip install -r requirements.txt
-   ```
-   
-   *Make sure to include a `requirements.txt` file listing packages like `astropy`, `numpy`, `matplotlib`, `scipy`, `pandas`.*
-
-3. **Launch Jupyter Lab/Notebook**:
-   ```bash
-   jupyter lab
-   ```
-   Open the notebooks in your browser and start exploring!
+---
 
 ## Repository Structure
 
-We suggest organizing the repository into several folders to keep materials tidy and easy to navigate:
+The repository is organized as follows:
 
 ```
-PythonAstronomyWorkshop/
-├─ data/
-│  ├─ fits_files/
-│  ├─ csv_catalogs/
-│  └─ example_data/
+├─ assignments/          # Assignments for participants
+│  ├─ assignment-1.md
+│  ├─ assignment-2.md
+│  ├─ ...
 │
-├─ notebooks/
-│  ├─ 01_python_basics.ipynb
-│  ├─ 02_handling_data.ipynb
-│  ├─ 03_fits_handling.ipynb
-│  ├─ 04_astropy_units_coords.ipynb
-│  ├─ 05_cosmology_calculations.ipynb
-│  └─ 06_final_project.ipynb
+├─ lectures/             # Lecture notes in Markdown
+│  ├─ Lecture-1 Basic Python for Astronomy.md
+│  ├─ Lecture-2 Numpy and Pandas for Astronomy.md
+│  ├─ ...
 │
-├─ assignments/
-│  ├─ exercise_day1.md
-│  ├─ exercise_day2.md
-│  └─ ...
+├─ solutions/            # Solutions to assignments
+│  ├─ solution-1.md
+│  ├─ solution-2.md
+│  ├─ ...
 │
-├─ solutions/
-│  ├─ solution_day1.ipynb
-│  ├─ solution_day2.ipynb
-│  └─ ...
-│
-├─ lectures/
-│  ├─ slides_day1.pdf
-│  ├─ slides_day2.pdf
-│  └─ ...
-│
-├─ environment/
-│  └─ requirements.txt
-│
-└─ README.md
+├─ requirements.txt      # Python dependencies for the workshop
+├─ README.md             # This file
+├─ LICENSE               # License for the repository
 ```
 
-**Folder Details:**
+---
 
-1. **`data/`**:  
-   Contains all the datasets used throughout the workshop. This might include:
-   - **`fits_files/`**: FITS images or spectral data.
-   - **`csv_catalogs/`**: Astronomical catalogs (e.g., star position, magnitude lists).
-   - **`example_data/`**: Small sample data for quick demonstrations.
-   
-2. **`notebooks/`**:  
-   Jupyter notebooks with lesson content. Each notebook corresponds to a topic or a day’s session:
-   - **`01_python_basics.ipynb`**: Variables, loops, functions, basic plotting.
-   - **`02_handling_data.ipynb`**: Loading CSV, FITS, using Astropy Tables.
-   - **`03_fits_handling.ipynb`**: Viewing FITS images, header analysis.
-   - **`04_astropy_units_coords.ipynb`**: Unit conversions, coordinate transformations.
-   - **`05_cosmology_calculations.ipynb`**: Using Astropy Cosmology to compute distances.
-   - **`06_final_project.ipynb`**: A culminating exercise combining all skills.
-   
-3. **`exercises/`**:  
-   Markdown or PDF files with problem statements for students to solve on their own. Each exercise corresponds to material covered in a particular day’s notebook.
-   
-4. **`solutions/`**:  
-   Contains the solution notebooks and code for the exercises. After students attempt them, these can be released as reference solutions.
-   
-5. **`lectures/`**:  
-   Lecture slides or PDF documents that give theoretical background, introducing concepts before diving into the coding notebooks.
-   
-6. **`environment/`**:  
-   Contains `requirements.txt` or an `environment.yml` file for easy environment replication. 
-   
-7. **`README.md`**:  
-   The overview of the project (the file you’re reading now).
+## Getting Started
 
-## Additional Resources
+To get started with this workshop, follow these steps:
 
-- **Astropy Documentation**: [https://docs.astropy.org](https://docs.astropy.org)  
-- **Matplotlib Documentation**: [https://matplotlib.org](https://matplotlib.org)  
-- **Gaia Mission Archive**: [https://gea.esac.esa.int/archive/](https://gea.esac.esa.int/archive/)  
-- **SDSS Data**: [https://www.sdss.org/dr16/](https://www.sdss.org/dr16/)
+### 1. Clone the Repository
+Clone this repository to your local machine using the following command:
+```bash
+git clone https://github.com/Astrojigs/PythonAstronomyWorkshop.git
+```
+
+### 2. Set Up Your Environment
+This workshop requires Python 3.8 or later. Use `pip` to create a Python environment and install the necessary dependencies.
+
+#### Step 1: Create a Virtual Environment
+```bash
+python -m venv astronomy-env
+source astronomy-env/bin/activate  # On Windows: astronomy-env\Scripts\activate
+```
+
+#### Step 2: Install Dependencies
+Navigate to the cloned repository and install the required Python packages:
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Launch Jupyter Notebook
+Ensure Jupyter is installed and launch it:
+```bash
+pip install jupyter
+jupyter notebook
+```
+Navigate to the appropriate folder and start working on the lectures or assignments.
+
+---
+
+## Workshop Topics
+
+### Lectures
+The workshop covers the following topics:
+1. **Basic Python for Astronomy**: Introduction to Python syntax, loops, functions, and basics of working with data.
+2. **Numpy and Pandas for Astronomy**: Numerical computations, data handling, and table manipulation.
+3. **Astropy Tables and FITS Files**: Reading and writing FITS files, using Astropy Tables for catalog manipulation.
+4. **Visualization for Astronomy**: Creating scatter plots, histograms, and displaying FITS images with Matplotlib.
+5. **Astropy Units and Coordinates**: Using units, handling celestial coordinates, and performing transformations.
+6. **Cosmology with Astropy**: Working with cosmological models and computing distances, redshifts, and lookback times.
+7. **Fitting and Modeling**: Curve fitting and modeling astronomical data.
+8. **Time-Series and Light Curve Analysis**: Analyzing periodic signals and working with time-series data.
+
+### Assignments
+Assignments are provided for each lecture topic to reinforce the concepts taught. Each assignment has an accompanying solution for reference.
+
+---
 
 ## Contributing
 
-This is an educational repository. Contributions that add small datasets, clarify code comments, or improve the explanation of astronomical concepts are welcome. Please open an issue or submit a pull request for any proposed changes.
+Contributions to this workshop are welcome! If you'd like to contribute, please:
+1. Fork the repository.
+2. Create a new branch for your changes.
+3. Submit a pull request with a detailed description of your changes.
+
+---
 
 ## License
 
-MIT License
+This project is licensed under the MIT License. See the `LICENSE` file for more details.
 
 ---
+
+## Contact
+
+For questions or feedback, please open an issue on GitHub or contact the workshop organizer directly.
+
+Happy coding and clear skies! 🚀✨
+
+---
+
+Let me know if there are any additional changes you'd like!
