@@ -1,7 +1,3 @@
-Below is a sample solution in Markdown format. In a real scenario, you might place this in a separate file like `solution_day1.md` or convert it into a Jupyter notebook (`solution_day1.ipynb`) with markdown and code cells. The solutions are explained step-by-step to help you understand the reasoning behind each step.
-
----
-
 # Assignment 1: Solutions and Explanations
 
 **Note:** All code blocks here are illustrative. In an actual Jupyter notebook, you would run each code block to verify outputs.
@@ -109,7 +105,7 @@ print("2.64 pc in ly:", parsec_to_ly(2.64))
 **Task 2:** `flux_to_mag(flux, flux_zero_point=3.631e-20)` converts flux to magnitude using the formula:
 
 $$
-m = -2.5 \times \log_{10}\left(\frac{\text{flux}}{\text{flux\_zero\_point}}\right)
+m = -2.5 \times \log_{10}\left(\frac{\text{flux}}{\text{flux\\_zero\\_point}}\right)
 $$
 
 **Reasoning:**  
