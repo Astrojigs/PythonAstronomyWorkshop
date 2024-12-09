@@ -1,10 +1,5 @@
-Below is a suggested Markdown file for **Assignment 1**, designed to reinforce the concepts covered in your first lecture (basic Python for astronomy). You can save this as `exercise_day1.md` in your `assignments` folder.
-
----
 
 # Assignment 1: Basic Python for Astronomy
-
-**Due:** [Set a due date, if applicable]
 
 **Instructions:**  
 Complete the following exercises to reinforce the Python basics you've learned today. For each question, write your code and results in a separate Jupyter notebook or script. Submit your final code and any outputs as instructed by your course organizers.
@@ -33,11 +28,12 @@ If any of the instructions are unclear, feel free to ask questions during the ne
 
 4. **Functions**  
    - Write a function `parsec_to_ly(distance_pc)` that returns the distance in light years. Test it by passing in `star_distance_pc` and printing the result.
-   - Write another function `flux_to_mag(flux, flux_zero_point=3.631e-20)` that converts a flux value to a magnitude using the formula:  
-     \[
-     m = -2.5 \times \log_{10}\left(\frac{\text{flux}}{\text{flux_zero_point}}\right)
-     \]  
-     Test this function with a sample flux of `1e-19` and print the resulting magnitude.
+   - Write another function `flux_to_mag(flux, flux_zero_point=3.631e-20)` that converts a flux value to a magnitude using the formula:
+
+$$m = -2.5 \times \log_{10}\left(\frac{\text{flux}}{\text{fluxzeropoint}}\right)$$
+
+Test this function with a sample flux of `1e-19` and print the resulting magnitude.
+
 
 ---
 
@@ -70,7 +66,7 @@ If any of the instructions are unclear, feel free to ask questions during the ne
 ---
 
 **Submission Guidelines:**  
-- Organize your solutions in a Jupyter notebook called `solution_day1.ipynb`.
+- Organize your solutions in a Jupyter notebook called `your_name_solution_1.ipynb`.
 - Include comments and Markdown cells where helpful to explain your approach.
 - Make sure your code runs without errors.
 - Submit your notebook to the course platform by the due date.
