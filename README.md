@@ -1,111 +1,96 @@
-# Python Astronomy Workshop
+# Python Astronomy Workshop 2024
 
 ## Overview
-
-This repository contains materials and exercises for a hands-on introductory workshop on using Python and Astropy for astronomical calculations, data analysis, and visualization. It is ideal for undergraduate and graduate students, as well as astronomy enthusiasts, who are eager to learn Python-based techniques for exploring and interpreting astronomical data.
+This repository contains materials for the **Python Astronomy Workshop 2024**, organized by Wilson College in collaboration with IAPT. The workshop is designed to teach participants the fundamentals of Python programming, astronomical calculations, and data analysis techniques using Python.
 
 ---
 
 ## Repository Structure
 
-The repository is organized as follows:
+```
+├── LICENSE
+├── README.md
+├── Referring Docs
+│   ├── .ipynb_checkpoints
+│   │   ├── Astronomical Coordinate Conversion Reference-checkpoint.ipynb
+│   │   ├── Curve Fitting and Numerical Computation Reference-checkpoint.ipynb
+│   │   ├── Python Quick Guide-checkpoint.ipynb
+│   │   ├── Sample Data Sets for Python Astronomy Workshop-checkpoint.ipynb
+│   │   └── Working with FITS Files-checkpoint.ipynb
+│   ├── Astronomical Coordinate Conversion Reference.ipynb
+│   ├── Curve Fitting and Numerical Computation Reference.ipynb
+│   ├── Python Quick Guide.ipynb
+│   ├── Sample Data Sets for Python Astronomy Workshop.ipynb
+│   └── Working with FITS Files.ipynb
+├── assignments
+│   ├── .ipynb_checkpoints
+│   │   └── Assignments-checkpoint.ipynb
+│   │   
+│   └── Assignments.ipynb
+├── data
+├── lectures
+│   ├── Lecture Notes for 27th Dec 2024.ipynb
+│   └── Lecture Notes for 28th Dec 2024.ipynb
+├── requirements.txt
+└── solutions
+    └── Assignment Solutions.ipynb
+```
 
-```
-├─ assignments/          # Assignments for participants
-│  ├─ assignment-1.md
-│  ├─ assignment-2.md
-│  ├─ ...
-│
-├─ lectures/             # Lecture notes in Markdown
-│  ├─ Lecture-1 Basic Python for Astronomy.md
-│  ├─ Lecture-2 Numpy and Pandas for Astronomy.md
-│  ├─ ...
-│
-├─ solutions/            # Solutions to assignments
-│  ├─ solution-1.md
-│  ├─ solution-2.md
-│  ├─ ...
-│
-├─ requirements.txt      # Python dependencies for the workshop
-├─ README.md             # This file
-├─ LICENSE               # License for the repository
-```
+### **Key Directories**
+
+#### 1. `Referring Docs`
+Contains detailed reference notebooks for students:
+- **Python Quick Guide.ipynb**: Covers Python basics and essential libraries.
+- **Curve Fitting and Numerical Computation Reference.ipynb**: Explains curve fitting techniques and numerical integration.
+- **Working with FITS Files.ipynb**: Guides students on FITS file operations using Astropy.
+- **Astronomical Coordinate Conversion Reference.ipynb**: Details coordinate systems and their conversions.
+- **Sample Data Sets for Python Astronomy Workshop.ipynb**: Provides sample datasets for hands-on learning.
+
+#### 2. `assignments`
+Includes:
+- **Assignments.ipynb**: Problem sets for students based on workshop topics.
+- **Assignment Solutions.ipynb**: Detailed solutions for the assignments.
+
+#### 3. `data`
+This folder is for datasets used in exercises and assignments.
+
+#### 4. `lectures`
+Contains lecture notebooks for the workshop sessions:
+- **Lecture Notes for 27th Dec 2024.ipynb**: Covers functions, curve fitting, and SciPy.
+- **Lecture Notes for 28th Dec 2024.ipynb**: Explores data importing with Pandas, CSVs, and FITS files.
+
+#### 5. `solutions`
+Reserved for storing additional solutions or example implementations.
 
 ---
 
-## Getting Started
+## Installation
 
-To get started with this workshop, follow these steps:
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/your-repo-link/python-astronomy-workshop.git
+   ```
 
-### 1. Clone the Repository
-Clone this repository to your local machine using the following command:
-```bash
-git clone https://github.com/Astrojigs/PythonAstronomyWorkshop.git
-```
-
-### 2. Set Up Your Environment
-This workshop requires Python 3.8 or later. Use `pip` to create a Python environment and install the necessary dependencies.
-
-#### Step 1: Create a Virtual Environment
-```bash
-python -m venv astronomy-env
-source astronomy-env/bin/activate  # On Windows: astronomy-env\Scripts\activate
-```
-
-#### Step 2: Install Dependencies
-Navigate to the cloned repository and install the required Python packages:
-```bash
-pip install -r requirements.txt
-```
-
-### 3. Launch Jupyter Notebook
-Ensure Jupyter is installed and launch it:
-```bash
-pip install jupyter
-jupyter notebook
-```
-Navigate to the appropriate folder and start working on the lectures or assignments.
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 ---
 
-## Workshop Topics
+## Workshop Schedule
 
-### Lectures
-The workshop covers the following topics:
-1. **Basic Python for Astronomy**: Introduction to Python syntax, loops, functions, and basics of working with data.
-2. **Numpy and Pandas for Astronomy**: Numerical computations, data handling, and table manipulation.
-3. **Astropy Tables and FITS Files**: Reading and writing FITS files, using Astropy Tables for catalog manipulation.
-4. **Visualization for Astronomy**: Creating scatter plots, histograms, and displaying FITS images with Matplotlib.
-5. **Astropy Units and Coordinates**: Using units, handling celestial coordinates, and performing transformations.
-6. **Cosmology with Astropy**: Working with cosmological models and computing distances, redshifts, and lookback times.
-7. **Fitting and Modeling**: Curve fitting and modeling astronomical data.
-8. **Time-Series and Light Curve Analysis**: Analyzing periodic signals and working with time-series data.
+- **27th Dec 2024**: Writing functions, curve fitting, and using SciPy.
+- **28th Dec 2024**: Data importing using Pandas, CSV, and FITS files.
+- **30th Dec 2024**: Exoplanet data analysis.
+- **31st Dec 2024**: Cosmology and solar flare data analysis.
+- **1st Jan 2025**: Exposure to X-ray binary data analysis.
 
-### Assignments
-Assignments are provided for each lecture topic to reinforce the concepts taught. Each assignment has an accompanying solution for reference.
-
----
-
-## Contributing
-
-Contributions to this workshop are welcome! If you'd like to contribute, please:
-1. Fork the repository.
-2. Create a new branch for your changes.
-3. Submit a pull request with a detailed description of your changes.
-
----
-
-## License
-
-This project is licensed under the MIT License. See the `LICENSE` file for more details.
+For the detailed schedule, refer to the `Schedule of Winter School.pdf`.
 
 ---
 
 ## Contact
-
-For questions or feedback, please open an issue on GitHub or contact the workshop organizer directly.
-
-Happy coding and clear skies! 🚀✨
-
----
-
+For any queries, please reach out to the workshop coordinators:
+- Mr. Mahesh Shetti: +91 91672 09329
+- Dr. Atul Mody: +91 77740 30403
