@@ -91,6 +91,4 @@ For the detailed schedule, refer to the `Schedule of Winter School.pdf`.
 ---
 
 ## Contact
-For any queries, please reach out to the workshop coordinators:
-- Mr. Mahesh Shetti: +91 91672 09329
-- Dr. Atul Mody: +91 77740 30403
+For any queries, please reach out to the workshop coordinators.
