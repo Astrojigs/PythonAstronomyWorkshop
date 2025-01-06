@@ -21,17 +21,21 @@ Kepler’s Third Law states that the square of a planet's orbital period is prop
 ---
 
 **3. Supernova Timing**  
-Type Ia supernovae are standard candles used to measure cosmic distances. Their luminosity fades over time according to the formula \( L(t) = L_0 e^{-kt} \), where \( L_0 \) is the initial luminosity and \( k \) is the decay constant. Assume \( L_0 = 10^9 \) \(L_\odot\) and \( k = 0.693 \) (time in days).  
+Type Ia supernovae are standard candles used to measure cosmic distances. Their luminosity fades over time according to the formula $L(t) = L_0 e^{-kt}$, where $L_0$ is the initial luminosity and $k $ is the decay constant. Assume $L_0 = 10^9$ $L_\odot$ and $k = 0.693$ (time in days).  
 
 - Using `numpy` and `matplotlib`, plot the luminosity decay over 100 days.  
-- Calculate how long it will take for the luminosity to drop to \( 10^6 \) \(L_\odot\).
+- Calculate how long it will take for the luminosity to drop to $10^6$ $L_\odot$.
 
 ---
 
 **4. Exoplanetary Climate Cycles**  
-An exoplanet's axis is tilted by 45°, causing extreme seasonal changes. Assume its year is 365 Earth days, and it follows a sinusoidal pattern for temperature variation:  
-\[ T(t) = T_0 + A \sin\left(\frac{2\pi t}{P}\right), \]  
-where \( T_0 = 15^\circ C \), \( A = 30^\circ C \), and \( P = 365 \).  
+An exoplanet's axis is tilted by 45°, causing extreme seasonal changes. Assume its year is 365 Earth days, and it follows a sinusoidal pattern for temperature variation:
+
+$$
+T(t) = T_0 + A \sin\left(\frac{2\pi t}{P}\right), 
+$$
+
+where $T_0 = 15^\circ C$, $A = 30^\circ C$, and $P = 365$.  
 
 - Use Python to calculate and plot the temperature over one year.  
 - What is the maximum temperature? On what day does it occur?  
